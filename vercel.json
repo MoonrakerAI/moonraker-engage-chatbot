@@ -19,10 +19,5 @@
   "env": {
     "ENVIRONMENT": "production",
     "PYTHONPATH": "/var/task"
-  },
-  "functions": {
-    "src/main.py": {
-      "maxDuration": 30
-    }
   }
 }
