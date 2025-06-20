@@ -2,22 +2,18 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/main.py",
+      "src": "api/main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/src/main.py"
+      "dest": "/api/main.py"
     },
     {
       "src": "/(.*)",
       "dest": "/frontend/dist/$1"
     }
-  ],
-  "env": {
-    "ENVIRONMENT": "production",
-    "PYTHONPATH": "/var/task"
-  }
+  ]
 }
